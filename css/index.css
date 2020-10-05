@@ -1,0 +1,42 @@
+/* Fonts */
+@font-face{
+  font-family: 'Exo2-Bold';
+  font-weight: 700;
+  src: url('../fonts/Exo2-Bold.ttf')format('woff2');
+}
+
+@font-face {
+  font-family: 'Exo2-Medium';
+  font-weight: 400;
+  src: url('../fonts/Exo2-Medium.ttf')format('woff2');
+}
+
+@font-face {
+  font-family: 'Exo2-Italic';
+  font-weight: 300;
+  src: url('../fonts/Exo2-Italic.ttf')format('woff2');
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+
+header{
+  margin: 0 auto;
+  height: 50px;
+}
+
+
+#title {
+  font-family: 'Exo2-Medium';
+  text-align: center;
+  top: 50%;
+  transform: translateY(50%);
+}
