@@ -94,7 +94,7 @@ main {
   margin: 5px auto;
   background: url(../image/reload-medium.svg) no-repeat center;
   padding: 10px;
-  cursor: pointer;
+  cursor: pointer; 
 }
 
 .generator-copy-btn {
@@ -113,4 +113,9 @@ main {
 
 .generator-copy-btn:hover {
   background-color: #e67777;
+}
+
+.rotate {
+  transition: .8s ease-out ;
+  transform: rotate(1turn);
 }
