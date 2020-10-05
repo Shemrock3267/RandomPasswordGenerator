@@ -95,6 +95,7 @@ main {
   background: url(../image/reload-medium.svg) no-repeat center;
   padding: 10px;
   cursor: pointer; 
+  will-change: transform;
 }
 
 .generator-copy-btn {
