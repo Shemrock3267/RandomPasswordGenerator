@@ -26,17 +26,91 @@
 
 body {
   height: 100vh;
+  min-width: 650px;
+  margin: 0 auto;
+  background-color: #f2f2f6;
 }
 
 header{
   margin: 0 auto;
-  height: 50px;
+  top: 50%;
+  text-align: center;
+  justify-content: center;
+  height: 60px;
 }
 
+main {
+  display: inline-block;
+  width: 100%;
+  margin: 50px auto;
+}
 
 #title {
   font-family: 'Exo2-Medium';
   text-align: center;
   top: 50%;
   transform: translateY(50%);
+}
+
+.generator-container {
+  width: 540px;
+  height: auto;
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.generator-input{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: 80px;
+  width: 540px;
+  background-color: #fff;
+  margin: 0 auto;
+}
+
+.generator-password {
+  width: 350px;
+  height: inherit;
+}
+
+.generator-buttons {
+  width: 190px;
+  height: inherit;
+  display: flex;
+  flex-flow: row nowrap;
+  align-content: center;
+}
+
+.generator-update-icon {
+  display: flex;
+  align-self: center;
+  min-width: 19px;
+  height: 35px;
+  width: 35px;
+  margin: 5px auto;
+  background: url(../image/reload-medium.svg) no-repeat center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.generator-copy-btn {
+  display: flex;
+  align-self: center;
+  margin: 10px auto;
+  min-width: 50px;
+  height: auto;
+  text-transform: uppercase;
+  font-family: 'Exo2-Bold';
+  padding: 10px 25px;
+  text-decoration: none;
+  background-color: #cf2323;
+  color: #fff;
+}
+
+.generator-copy-btn:hover {
+  background-color: #e67777;
 }
