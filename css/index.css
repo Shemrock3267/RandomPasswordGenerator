@@ -17,7 +17,7 @@
   src: url('../fonts/Exo2-Italic.ttf')format('woff2');
 }
 
-
+/* Styling */
 * {
   margin: 0;
   padding: 0;
@@ -119,4 +119,41 @@ main {
 .rotate {
   transition: .8s ease-out ;
   transform: rotate(1turn);
+}
+
+.length-settings {
+  display: flex;
+  align-items: center;
+  
+}
+
+.generator-settings {
+  margin: 10px auto;
+}
+
+.password-length{
+
+}
+
+.btn {
+  width: 18px;
+  height: 18px;
+  background-color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  margin: 5px;
+  box-shadow: 0 0 5px 0 rgba(0,0,0,.2);;
+}
+
+.minus {
+
+}
+
+.plus {
+
+}
+
+.slider {
+
 }

@@ -12,6 +12,7 @@
   </header>
   <main>
     <div class="generator-container">
+
       <div class="generator-input">
         <div class="generator-password"></div>
         <div class="generator-buttons">
@@ -19,7 +20,16 @@
           <a class="generator-copy-btn">copy</a>
         </div>
       </div>
-      <div class="generator-settings"></div>
+
+      <div class="generator-settings">
+        <form class="length-settings">
+          <label>Password length: </label>
+          <span class="password-length"></span>
+          <div class="btn minus">-</div>
+          <input type="range" min="1" max="30" class="slider" >
+          <div class="btn plus">+</div>
+        </form>
+      </div>
     </div>
   </main>
   <script src="../app/index.js"></script>
