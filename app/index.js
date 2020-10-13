@@ -33,7 +33,8 @@ function incresePasswordLength() {
   showPasswordLength(val);
 }
 
-function rotateOn(){ 
+function rotateOn() {
+  copyPasswordReset();
   reloadIcon.classList.add("rotate");
   setTimeout(rotateOff, 800);
 }
@@ -44,4 +45,8 @@ function rotateOff(){
 
 function copyPassword() { 
   copyBtn.textContent = 'copied';
+}
+
+function copyPasswordReset() { 
+  copyBtn.textContent = 'copy';
 }
