@@ -64,7 +64,7 @@ function copyPasswordReset() {
 }
 
 function generatePassword(number) { 
-  const result = generateFourNumbers(number);
+  const result = generateObject(number);
   createPasswordString(result);
 }
 
@@ -87,7 +87,7 @@ function getSymbol() {
 	return symbols[Math.floor(Math.random() * symbols.length)];
 }
 
-function generateFourNumbers(num) { 
+function generateObject(num) { 
   const max = num;
   const r1 = randomNumberBetween(1, max-3);
   const r2 = randomNumberBetween(1, max-2-r1);
@@ -102,17 +102,25 @@ function generateFourNumbers(num) {
     lowerCase: r1,
     upperCase: r2,
     numbers: r3,
-    symbols: r4
+    symbols: r4,
+    max
   }
 }
 
 function createPasswordString(obj) { 
   let finalPassword = '';
   const randomFour = () => { return Math.floor(Math.random() * 4 + 1) };
-  const initSwitch = () => { 
-    let num = randomFour();
-    
+
+
+  for (let i = 0; i < obj.max; i++) { 
+    const res = randomFour();
+    // pass res into switch to get specific value (letter,number,symbol)
+    // but run specific function no more than the value of r1,r2,r3,r4 
   }
+  // const initSwitch = () => { 
+  //   let num = randomFour();
+  // }
+
   // switch case with 4 options:
   // 1 - getLowerCase(), 2 - getUpperCase(), 3 - getNumber(), 4 - getSymbol()
   // function to generate random number from 1 to 4 aand pass it into switch in
@@ -123,11 +131,11 @@ function createPasswordString(obj) {
   // numbers: r3,
   // symbols: r4
 
-  switch (num) { 
-    case "1": { getLowerCaseLetter(); }
-    case "2": { getUpperCaseLetter(); }
-    case "3": { getNumber(); }
-    case "4": { getSymbol(); }
+  switch (randomFour) { 
+    case "1": { const res = getLowerCaseLetter();  return finalPassword += res; }
+    case "2": { const res = getUpperCaseLetter(); return finalPassword += res;}
+    case "3": { const res = getNumber(); return finalPassword += res;}
+    case "4": { const res = getSymbol(); return finalPassword += res; }
     default: break;
   }
 }
