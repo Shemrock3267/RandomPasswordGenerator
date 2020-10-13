@@ -132,7 +132,10 @@ main {
 }
 
 .password-length{
-
+  width: 20px;
+  margin: 0 5px;
+  text-align: center;
+  justify-content: center;
 }
 
 .btn {
