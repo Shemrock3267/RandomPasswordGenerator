@@ -12,7 +12,6 @@ plusBtn.addEventListener('click', incresePasswordLength);
 reloadIcon.addEventListener('click', rotateOn);
 copyBtn.addEventListener('click', copyPassword);
 
-
 // getting value of slider thumb on drag
 slider.oninput = function() { 
   passLength.textContent = this.value;
@@ -31,12 +30,18 @@ function showPasswordLength(val) {
 
 function decreasePasswordLength() { 
   const val = --slider.value;
+  if (val < 1) { 
+    val = 1;
+  }
   slider.oninput();
   showPasswordLength(val);
 }
 
 function incresePasswordLength() { 
   const val = ++slider.value;
+  if (val > 30) { 
+    val = 30;
+  }
   slider.oninput();
   showPasswordLength(val);
 }
@@ -68,7 +73,6 @@ function copyPasswordReset() {
 }
 
 function generatePassword(number) { 
-  console.log(createPasswordString(number));
   password.textContent = createPasswordString(number);
 }
 

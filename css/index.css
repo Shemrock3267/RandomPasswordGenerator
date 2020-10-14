@@ -26,7 +26,7 @@
 
 body {
   height: 100vh;
-  min-width: 650px;
+  min-width: 580px;
   margin: 0 auto;
   background-color: #f2f2f6;
 }
@@ -46,7 +46,7 @@ main {
 }
 
 #title {
-  font-family: 'Exo2-Medium';
+  font-family: 'Exo2-Bold';
   text-align: center;
   top: 50%;
   transform: translateY(50%);
@@ -73,8 +73,13 @@ main {
 }
 
 .generator-password {
+  display: flex;
   width: 350px;
-  height: inherit;
+  margin: auto 10px;
+  justify-content: center;
+  font-family: "Exo2-Medium";
+  font-size: 18px;
+  letter-spacing: .3px;
 }
 
 .generator-buttons {
