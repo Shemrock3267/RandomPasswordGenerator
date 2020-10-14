@@ -134,6 +134,13 @@ main {
 
 .generator-settings {
   margin: 10px auto;
+  font-family: "Exo2-Medium";
+  font-size: 18px;
+}
+
+.generator-settings label {
+  font-family: "Exo2-Italic";
+  font-size: 18px;
 }
 
 .password-length{
@@ -144,14 +151,16 @@ main {
 }
 
 .btn {
-  width: 18px;
-  height: 18px;
+  width: 24px;
+  height: 24px;
   background-color: #fff;
   border-radius: 5px;
   cursor: pointer;
   text-align: center;
+  justify-content: center;
   margin: 5px;
-  box-shadow: 0 0 5px 0 rgba(0,0,0,.2);;
+  box-shadow: 0 0 5px 0 rgba(0,0,0,.2);
+  font-family: "Exo-Medium";
 }
 
 .minus {
