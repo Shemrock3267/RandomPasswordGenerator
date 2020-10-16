@@ -29,7 +29,7 @@ function showPasswordLength(val) {
 }
 
 function decreasePasswordLength() { 
-  const val = --slider.value;
+  let val = --slider.value;
   if (val < 1) { 
     val = 1;
   }
@@ -38,7 +38,7 @@ function decreasePasswordLength() {
 }
 
 function incresePasswordLength() { 
-  const val = ++slider.value;
+  let val = ++slider.value;
   if (val > 30) { 
     val = 30;
   }
