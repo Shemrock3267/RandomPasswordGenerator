@@ -54,7 +54,7 @@ main {
 }
 
 .generator-container {
-  width: 540px;
+  width: 520px;
   height: auto;
   display: flex;
   align-content: center;
@@ -68,7 +68,7 @@ main {
   flex-direction: row;
   flex-wrap: nowrap;
   height: 80px;
-  width: 540px;
+  width: 500px;
   background-color: #fff;
   margin: 20px auto;
   
@@ -85,7 +85,7 @@ main {
 }
 
 .generator-buttons {
-  width: 190px;
+  width: 150px;
   height: inherit;
   display: flex;
   flex-flow: row nowrap;
@@ -100,23 +100,22 @@ main {
   width: 35px;
   margin: 5px auto;
   background: url(../image/reload-medium.svg) no-repeat center;
-  padding: 10px;
+  padding: 5px;
   cursor: pointer; 
   will-change: transform; 
 }
 
 .generator-copy-btn {
-  display: flex;
-  align-self: center;
-  margin: 10px auto;
-  min-width: 50px;
-  height: auto;
+  margin: auto;
+  width: 85px;
+  height: 39px;
   text-transform: uppercase;
   font-family: 'Exo2-Bold';
-  padding: 10px 25px;
+  padding: 10px;
   text-decoration: none;
   background-color: #cf2323;
   color: #fff;
+  text-align: center;
 }
 
 .generator-copy-btn:hover {
